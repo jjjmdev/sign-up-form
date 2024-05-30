@@ -56,7 +56,7 @@ section.form-container {
 	}
 
 	& > h3 {
-		padding: 30px;
+		margin: 30px;
 	}
 
 	form {
@@ -103,6 +103,17 @@ section.form-container {
 				padding: 10px;
 				margin-top: 5px;
 				margin-bottom: 30px;
+				border: 2px solid #e5e7eb;
+				border-radius: 5px;
+			}
+
+			input:invalid,
+			input[type="password"]:invalid {
+				border-color: red;
+			}
+
+			input:focus {
+				box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 			}
 		}
 	}
